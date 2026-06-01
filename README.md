@@ -24,11 +24,17 @@ I'm a full stack developer with a strong interest in web development, automation
 
 ---
 
-## 📊 GitHub Activity
+## 📊 GitHub Stats
 
-I actively contribute to public repositories and organization-owned repositories as part of my professional work.
+<div align="center">
 
-> My full contribution activity is visible in GitHub's official contribution graph below this README.
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=carlosmartins19&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" />
+
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosmartins19&theme=dark&hide_border=true" />
+
+</div>
+
+> Some organization-owned repository activity may not be fully reflected in third-party stats cards.
 
 ---
 
