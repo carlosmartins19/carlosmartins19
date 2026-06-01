@@ -6,7 +6,7 @@ I'm a full stack developer with a strong interest in web development, automation
 
 ---
 
-## 🚀 Tecnologias
+## 🚀 Tech Stack
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
@@ -18,28 +18,38 @@ I'm a full stack developer with a strong interest in web development, automation
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql)
 
-### Ferramentas
+### Tools
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 
 ---
 
-## 📊 Estatísticas
+## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=carlosmartins19&show_icons=true&theme=dark)
+![Carlos' GitHub Stats](https://github-readme-stats.vercel.app/api?username=carlosmartins19&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosmartins19&layout=compact&theme=dark)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=carlosmartins19&theme=dark)
 
----
-
-## 📌 Projetos em destaque
-
-- **Projeto 1** — descrição curta do projeto.
-- **Projeto 2** — descrição curta do projeto.
-- **Projeto 3** — descrição curta do projeto.
+> Some of my contributions are made in organization-owned repositories and may not be fully reflected in third-party stats cards.
 
 ---
 
-## 📫 Contacto
+## 📈 Contribution Activity
+
+![Carlos' GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=carlosmartins19&theme=github-compact)
+
+---
+
+## 📌 Featured Projects
+
+- **Portfolio Website** — Personal portfolio to showcase my work, projects, and technical skills.
+- **Web Applications** — Full stack applications built with React, Next.js, Python, and PostgreSQL.
+- **Automation & AI Tools** — Projects focused on automation, productivity, and AI-powered features.
+
+---
+
+## 📫 Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/11b143146)
