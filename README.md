@@ -26,9 +26,9 @@ I'm a full stack developer with a strong interest in web development, automation
 
 ## 📊 GitHub Activity
 
-My GitHub contribution graph includes public repositories as well as eligible organization-owned repositories where I actively contribute.
+I actively contribute to public repositories and organization-owned repositories as part of my professional work.
 
-> Some activity may not be fully reflected in third-party stats cards, but it is visible in GitHub's official contribution graph below.
+> My full contribution activity is visible in GitHub's official contribution graph below this README.
 
 ---
 
