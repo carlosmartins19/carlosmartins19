@@ -24,21 +24,11 @@ I'm a full stack developer with a strong interest in web development, automation
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
-![Carlos' GitHub Stats](https://github-readme-stats.vercel.app/api?username=carlosmartins19&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
+My GitHub contribution graph includes public repositories as well as eligible organization-owned repositories where I actively contribute.
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosmartins19&layout=compact&theme=dark)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=carlosmartins19&theme=dark)
-
-> Some of my contributions are made in organization-owned repositories and may not be fully reflected in third-party stats cards.
-
----
-
-## 📈 Contribution Activity
-
-![Carlos' GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=carlosmartins19&theme=github-compact)
+> Some activity may not be fully reflected in third-party stats cards, but it is visible in GitHub's official contribution graph below.
 
 ---
 
