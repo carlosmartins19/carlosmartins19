@@ -35,11 +35,17 @@ I actively contribute to public repositories and organization-owned repositories
 ## 📌 Featured Projects
 
 - **Portfolio Website** — Personal portfolio to showcase my work, projects, and technical skills.
+![Pack4Sustain](https://pack4sustain.pontoverdelab.pt/)
+![Blaze](https://staging.tymber.io/menu/site-1/)
+
 - **Web Applications** — Full stack applications built with React, Next.js, Python, and PostgreSQL.
+
 - **Automation & AI Tools** — Projects focused on automation, productivity, and AI-powered features.
+- MCP SERVER/CLIENT
+- CODEX
 
 ---
 
 ## 📫 Contact
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/11b143146)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/carlos-martins-11b143146)
