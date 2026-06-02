@@ -4,7 +4,8 @@
 
 I'm a Front-End Engineer with a strong interest in web development, automation, and artificial intelligence. I build practical, scalable, and user-focused applications using modern technologies.
 
-I also have some background in backend development and would like to explore it more deeply in the future.
+I also have some background in backend development and I'm interested in exploring it more deeply in the future.
+
 ---
 
 ## 🚀 Tech Stack
@@ -21,7 +22,7 @@ I also have some background in backend development and would like to explore it 
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql)
 
-### Tools 
+### Tools
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
@@ -42,18 +43,18 @@ I actively contribute to public repositories and organization-owned repositories
 
 ### Portfolio Website
 
-Personal portfolio to showcase my work, projects, and technical skills.
+Personal portfolio built to showcase my work, projects, and technical skills.
 
 - [Pack4Sustain](https://pack4sustain.pontoverdelab.pt/)
 - [Blaze](https://staging.tymber.io/menu/site-1/)
 
 ### Web Applications
 
-Full stack applications built with React, Next.js, Python, and PostgreSQL.
+Full-stack applications focused on clean user interfaces, performance, and scalable architecture.
 
 ### Automation & AI Tools
 
-Projects focused on automation, productivity, and AI-powered features.
+Tools and experiments focused on automation, productivity, and AI-powered workflows.
 
 - MCP Server / Client
 - Codex
