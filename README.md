@@ -9,16 +9,19 @@ I'm a full stack developer with a strong interest in web development, automation
 ## 🚀 Tech Stack
 
 ### Frontend
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 
 ### Backend
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql)
 
 ### Tools
+
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 
@@ -34,15 +37,23 @@ I actively contribute to public repositories and organization-owned repositories
 
 ## 📌 Featured Projects
 
-- **Portfolio Website** — Personal portfolio to showcase my work, projects, and technical skills.
-![Pack4Sustain](https://pack4sustain.pontoverdelab.pt/)
-![Blaze](https://staging.tymber.io/menu/site-1/)
+### Portfolio Website
 
-- **Web Applications** — Full stack applications built with React, Next.js, Python, and PostgreSQL.
+Personal portfolio to showcase my work, projects, and technical skills.
 
-- **Automation & AI Tools** — Projects focused on automation, productivity, and AI-powered features.
-- MCP SERVER/CLIENT
-- CODEX
+- [Pack4Sustain](https://pack4sustain.pontoverdelab.pt/)
+- [Blaze](https://staging.tymber.io/menu/site-1/)
+
+### Web Applications
+
+Full stack applications built with React, Next.js, Python, and PostgreSQL.
+
+### Automation & AI Tools
+
+Projects focused on automation, productivity, and AI-powered features.
+
+- MCP Server / Client
+- Codex
 
 ---
 
