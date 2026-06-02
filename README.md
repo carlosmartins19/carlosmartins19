@@ -1,9 +1,10 @@
 # Hi, I'm Carlos 👋
 
-### Full Stack Developer • React • Python • AI
+### Front-End Engineer • React • Python • AI
 
-I'm a full stack developer with a strong interest in web development, automation, and artificial intelligence. I build practical, scalable, and user-focused applications using modern technologies.
+I'm a Front-End Engineer with a strong interest in web development, automation, and artificial intelligence. I build practical, scalable, and user-focused applications using modern technologies.
 
+I also have some background in backend development and would like to explore it more deeply in the future.
 ---
 
 ## 🚀 Tech Stack
