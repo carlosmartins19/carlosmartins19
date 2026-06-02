@@ -2,7 +2,9 @@
 
 ### Front-End Engineer • React • Python • AI
 
-I'm a Front-End Engineer with a strong interest in web development, automation, and artificial intelligence. I build practical, scalable, and user-focused applications using modern technologies.
+Frontend Engineer with over 4 years of experience delivering scalable web applications and robust user interfaces using React, Next.js, and TypeScript. Proven expertise in micro-frontend architecture,
+encompassing integration, runtime communication, and independent deployment. Adept at optimizing performance and user experience across complex frontend platforms while collaborating effectively in
+cross-functional teams.
 
 I also have some background in backend development and I'm interested in exploring it more deeply in the future.
 
