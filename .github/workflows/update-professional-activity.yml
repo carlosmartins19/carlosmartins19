@@ -1,0 +1,29 @@
+name: Update professional activity chart
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate activity SVG
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+          GITHUB_USER: carlosmartins19
+        run: python scripts/generate_activity_svg.py
+
+      - name: Commit updated SVG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update professional activity chart
+          file_pattern: assets/professional-activity.svg
