@@ -126,7 +126,7 @@ I actively contribute to public repositories and organization-owned repositories
 Some professional contributions are visible in GitHub's official contribution graph, but may not be accurately reflected by third-party README stats cards.
 
 <p align="center">
-  <img src="./assets/professional-activity.svg?v=2" alt="Aggregated professional GitHub activity" />
+  <img src="./assets/professional-activity.svg?v=6" alt="Aggregated professional GitHub activity" />
 </p>
 
 ---
