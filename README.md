@@ -37,8 +37,11 @@ I also have some background in backend development and I'm interested in explori
 
 I actively contribute to public repositories and organization-owned repositories as part of my professional work.
 
-> Some professional contributions are visible in GitHub's official contribution graph, but may not be accurately reflected by third-party README stats cards.
+> Private and organization-owned repository activity is represented only in aggregated form. Repository names, commit details, branches, issues, and proprietary information are not disclosed.
 
+<p align="center">
+  <img src="./assets/professional-activity.svg" alt="Aggregated professional GitHub activity" />
+</p>
 ---
 
 ## 📌 Featured Projects
