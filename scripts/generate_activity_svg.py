@@ -1,4 +1,3 @@
-```py
 #!/usr/bin/env python3
 """Generate an anonymized professional GitHub activity SVG for a profile README.
 
@@ -271,4 +270,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-```
