@@ -1,3 +1,4 @@
+```py
 #!/usr/bin/env python3
 """Generate an anonymized professional GitHub activity SVG for a profile README.
 
@@ -101,13 +102,16 @@ def fetch_activity(login: str) -> dict:
 def level_for_count(count: int, max_count: int) -> int:
     if count <= 0 or max_count <= 0:
         return 0
+
     ratio = count / max_count
+
     if ratio < 0.25:
         return 1
     if ratio < 0.50:
         return 2
     if ratio < 0.75:
         return 3
+
     return 4
 
 
@@ -118,6 +122,7 @@ def color_for_level(level: int) -> str:
 def metric_card(x: int, y: int, label: str, value: int) -> str:
     safe_label = html.escape(label)
     safe_value = html.escape(f"{value:,}")
+
     return f'''
     <g>
       <rect x="{x}" y="{y}" width="164" height="74" rx="12" fill="#ffffff" stroke="#d8dee4"/>
@@ -129,26 +134,54 @@ def metric_card(x: int, y: int, label: str, value: int) -> str:
 def build_svg(activity: dict, login: str) -> str:
     calendar = activity["contributionCalendar"]
     weeks = calendar["weeks"][-53:]
-    counts = [day["contributionCount"] for week in weeks for day in week["contributionDays"]]
+
+    counts = [
+        day["contributionCount"]
+        for week in weeks
+        for day in week["contributionDays"]
+    ]
     max_count = max(counts) if counts else 0
 
-    heatmap_parts: list[str] = []
+    svg_width = 860
+    svg_height = 390
+
+    card_y = 118
+    card_height = 74
+    card_bottom = card_y + card_height
+
     square = 11
     gap = 3
+
     heatmap_x = 32
-    heatmap_y = 196
+    calendar_title_y = card_bottom + 32
+    heatmap_y = calendar_title_y + 14
+
+    heatmap_rows = 7
+    heatmap_height = heatmap_rows * square + (heatmap_rows - 1) * gap
+
+    footer_y = heatmap_y + heatmap_height + 28
+    legend_square_y = footer_y - 9
+    updated_at_y = footer_y + 17
+
+    heatmap_parts: list[str] = []
 
     for week_index, week in enumerate(weeks):
         days = week["contributionDays"]
+
         for day_index, day in enumerate(days):
             count = int(day["contributionCount"])
             level = level_for_count(count, max_count)
+
             x = heatmap_x + week_index * (square + gap)
             y = heatmap_y + day_index * (square + gap)
+
             date_label = html.escape(day["date"])
+
             heatmap_parts.append(
                 f'<rect x="{x}" y="{y}" width="{square}" height="{square}" rx="2" '
-                f'fill="{color_for_level(level)}"><title>{date_label}: {count} contributions</title></rect>'
+                f'fill="{color_for_level(level)}">'
+                f'<title>{date_label}: {count} contributions</title>'
+                f'</rect>'
             )
 
     total = int(calendar["totalContributions"])
@@ -160,35 +193,39 @@ def build_svg(activity: dict, login: str) -> str:
     updated_at = dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     safe_login = html.escape(login)
 
-    return f'''<svg width="860" height="340" viewBox="0 0 860 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    return f'''<svg width="{svg_width}" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Professional GitHub activity for {safe_login}</title>
   <desc id="desc">Aggregated GitHub contribution metrics for the last 12 months. Repository names and private details are not disclosed.</desc>
-  <rect width="860" height="340" rx="18" fill="#f6f8fa"/>
-  <rect x="1" y="1" width="858" height="338" rx="17" stroke="#d8dee4"/>
+
+  <rect width="{svg_width}" height="{svg_height}" rx="18" fill="#f6f8fa"/>
+  <rect x="1" y="1" width="{svg_width - 2}" height="{svg_height - 2}" rx="17" stroke="#d8dee4"/>
 
   <text x="32" y="44" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#24292f">Professional GitHub Activity</text>
   <text x="32" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#57606a">Aggregated contribution data from the last 12 months</text>
   <text x="32" y="92" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#6e7781">Repository names, branches, commit messages and proprietary details are not disclosed.</text>
 
   <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
-    {metric_card(32, 118, "Total contributions", total)}
-    {metric_card(212, 118, "Commits", commits)}
-    {metric_card(392, 118, "Pull requests", prs)}
-    {metric_card(572, 118, "Reviews", reviews)}
+    {metric_card(32, card_y, "Total contributions", total)}
+    {metric_card(212, card_y, "Commits", commits)}
+    {metric_card(392, card_y, "Pull requests", prs)}
+    {metric_card(572, card_y, "Reviews", reviews)}
   </g>
 
   <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
-    <text x="32" y="182" font-size="13" font-weight="600" fill="#24292f">Contribution calendar</text>
+    <text x="32" y="{calendar_title_y}" font-size="13" font-weight="600" fill="#24292f">Contribution calendar</text>
     {''.join(heatmap_parts)}
-    <text x="32" y="315" font-size="12" fill="#6e7781">Issues: {issues:,}</text>
-    <text x="640" y="315" font-size="12" fill="#6e7781">Less</text>
-    <rect x="674" y="306" width="11" height="11" rx="2" fill="#ebedf0"/>
-    <rect x="691" y="306" width="11" height="11" rx="2" fill="#9be9a8"/>
-    <rect x="708" y="306" width="11" height="11" rx="2" fill="#40c463"/>
-    <rect x="725" y="306" width="11" height="11" rx="2" fill="#30a14e"/>
-    <rect x="742" y="306" width="11" height="11" rx="2" fill="#216e39"/>
-    <text x="762" y="315" font-size="12" fill="#6e7781">More</text>
-    <text x="32" y="332" font-size="11" fill="#8c959f">Last updated: {updated_at}</text>
+
+    <text x="32" y="{footer_y}" font-size="12" fill="#6e7781">Issues: {issues:,}</text>
+
+    <text x="640" y="{footer_y}" font-size="12" fill="#6e7781">Less</text>
+    <rect x="674" y="{legend_square_y}" width="11" height="11" rx="2" fill="#ebedf0"/>
+    <rect x="691" y="{legend_square_y}" width="11" height="11" rx="2" fill="#9be9a8"/>
+    <rect x="708" y="{legend_square_y}" width="11" height="11" rx="2" fill="#40c463"/>
+    <rect x="725" y="{legend_square_y}" width="11" height="11" rx="2" fill="#30a14e"/>
+    <rect x="742" y="{legend_square_y}" width="11" height="11" rx="2" fill="#216e39"/>
+    <text x="762" y="{footer_y}" font-size="12" fill="#6e7781">More</text>
+
+    <text x="32" y="{updated_at_y}" font-size="11" fill="#8c959f">Last updated: {updated_at}</text>
   </g>
 </svg>
 '''
@@ -196,6 +233,7 @@ def build_svg(activity: dict, login: str) -> str:
 
 def fallback_svg(message: str) -> str:
     safe_message = html.escape(message[:160])
+
     return f'''<svg width="860" height="220" viewBox="0 0 860 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Professional GitHub activity</title>
   <desc id="desc">The activity chart will be generated by GitHub Actions.</desc>
@@ -211,7 +249,12 @@ def fallback_svg(message: str) -> str:
 
 def main() -> int:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    login = os.environ.get("GITHUB_USER") or os.environ.get("GITHUB_ACTOR") or "carlosmartins19"
+
+    login = (
+        os.environ.get("GITHUB_USER")
+        or os.environ.get("GITHUB_ACTOR")
+        or "carlosmartins19"
+    )
 
     try:
         activity = fetch_activity(login)
@@ -222,8 +265,10 @@ def main() -> int:
 
     OUTPUT_PATH.write_text(svg, encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH}")
+
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
+```
