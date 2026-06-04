@@ -1,4 +1,3 @@
-```md
 # Hi, I'm Carlos Martins 👋
 
 ### Frontend Software Engineer • React • Next.js • TypeScript • Python • AI
@@ -171,4 +170,3 @@ That experience helped me develop discipline, teamwork, resilience, communicatio
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/carlos-martins-11b143146)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/carlosmartins19)
-```
