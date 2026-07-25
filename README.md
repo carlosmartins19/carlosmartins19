@@ -160,7 +160,7 @@ Some professional contributions are visible in GitHub's official contribution gr
 
 ## 🏆 Beyond Engineering
 
-Before and alongside my software engineering career, I play handball at a professional level in Portugal in ABC Braga, Sport Lisboa e Benfica and now Vitória de Guimarães.
+Before and alongside my software engineering career, I play handball at a professional level in Portugal in ABC Braga, Sport Lisboa e Benfica and now Vitória Sport Clube.
 
 That experience helped me develop discipline, teamwork, resilience, communication, and performance under pressure — qualities I bring into engineering teams and product development.
 
