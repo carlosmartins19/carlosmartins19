@@ -97,6 +97,12 @@ Main areas of work:
 - Supporting authentication flows, including social login integrations such as Google Sign-In.
 - Contributed to code reviews, mentored junior developers, and improved engineering standards.
 
+### Django Web Developer — Pack4Sustain | 07/2021 — 07/2022
+
+- Developed and maintained web applications with **Django** and **Django REST Framework**, focusing on reliable backend services and maintainable application architecture.
+- Designed and optimised **REST APIs** backed by **PostgreSQL**, improving data access and supporting integrations with external platforms and webhooks.
+- Built tailored **Django Admin** interfaces that simplified content management and day-to-day operational workflows.
+
 ---
 
 ## 🤖 AI & Automation
